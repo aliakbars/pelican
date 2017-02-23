@@ -1,0 +1,204 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to Pelican\n\n\nThis site is under construction.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-pelican", 
+            "text": "This site is under construction.", 
+            "title": "Welcome to Pelican"
+        }, 
+        {
+            "location": "/event/", 
+            "text": "Event\n\n\n\n\nResource URL\n\n\nGET /event\n\n\n\nDescription\n\n\nGet list of events\n\n\nParameters\n\n\n\n\n\n    \nq\n\n    \nEvent name or company name\n\n\n\n\n\nExample Response\n\n\n{\n    \ncurrent_page\n: 1,\n    \ndata\n: [\n        {\n            \ncompany_name\n: \nRevision Live\n,\n            \ncreated_at\n: \n2017-02-23 14:38:25\n,\n            \ndeleted_at\n: null,\n            \ndetails\n: \n,\n            \nemail\n: \nyudhaarif@gmail.com\n,\n            \nend_datetime\n: \n2017-05-07 23:59:00\n,\n            \nevent_name\n: \nHammersonic\n,\n            \nfirst_name\n: \nYudha\n,\n            \nid\n: 1,\n            \nlast_name\n: \nBudiman\n,\n            \nowner\n: 1,\n            \nphone\n: \n0818834315\n,\n            \nstart_datetime\n: \n2017-05-07 19:00:00\n,\n            \nticket_quota\n: 100,\n            \nupdated_at\n: \n2017-02-23 14:38:25\n,\n            \nvenue\n: \nJakarta\n\n        }\n    ],\n    \nfrom\n: 1,\n    \nlast_page\n: 1,\n    \nnext_page_url\n: null,\n    \nper_page\n: 25,\n    \nprev_page_url\n: null,\n    \nto\n: 1,\n    \ntotal\n: 1\n}\n\n\n\n\n\n\nResource URL\n\n\nPOST /event/create\n\n\n\nDescription\n\n\nCreate an event\n\n\nParameters\n\n\n\n\n\n    \nname\n\n    \nName of the contact person\n\n\n\n\n\n    \nemail\n\n    \nContact person's e-mail\n\n\n\n\n\n    \nphone\n\n    \n10-12 characters\n\n\n\n\n\n    \nevent_name\n\n    \nName of the event\n\n\n\n\n\n    \ncompany_name\n\n    \nName of the company\n\n\n\n\n\n    \nticket_quota\n\n    \nAllowed value 1-2000\n\n\n\n\n\n    \nstart_date\n\n    \nFormat yyyy-mm-dd\n\n\n\n\n\n    \nstart_time\n\n    \nFormat hh:mm\n\n\n\n\n\n    \nend_date\n\n    \nFormat yyyy-mm-dd\n\n\n\n\n\n    \nend_time\n\n    \nFormat hh:mm\n\n\n\n\n\n    \nvenue\n\n    \nName of the venue\n\n\n\n\n\n\nExample Response\n\n\n{\n    \nstatus\n: \nsuccess\n,\n    \nmessage\n: \nEvent Anda berhasil disimpan!\n\n}\n\n\n\n\n\n\nResource URL\n\n\nGET /event/{event_id}\n\n\n\nDescription\n\n\nShow an event's details\n\n\nExample Response\n\n\n{\n    \ncompany_name\n: \nRevision Live\n,\n    \ncreated_at\n: \n2017-02-23 14:38:25\n,\n    \ndeleted_at\n: null,\n    \ndetails\n: \n,\n    \nemail\n: \nyudhaarif@gmail.com\n,\n    \nend_datetime\n: \n2017-05-07 23:59:00\n,\n    \nevent_name\n: \nHammersonic\n,\n    \nfirst_name\n: \nYudha\n,\n    \nid\n: 1,\n    \nlast_name\n: \nBudiman\n,\n    \nowner\n: 1,\n    \nphone\n: \n0818834315\n,\n    \nstart_datetime\n: \n2017-05-07 19:00:00\n,\n    \nticket_quota\n: 100,\n    \nupdated_at\n: \n2017-02-23 14:38:25\n,\n    \nvenue\n: \nJakarta\n\n}", 
+            "title": "Event"
+        }, 
+        {
+            "location": "/event/#event", 
+            "text": "", 
+            "title": "Event"
+        }, 
+        {
+            "location": "/event/#resource-url", 
+            "text": "GET /event", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/event/#description", 
+            "text": "Get list of events", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/event/#parameters", 
+            "text": "q \n     Event name or company name", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/event/#example-response", 
+            "text": "{\n     current_page : 1,\n     data : [\n        {\n             company_name :  Revision Live ,\n             created_at :  2017-02-23 14:38:25 ,\n             deleted_at : null,\n             details :  ,\n             email :  yudhaarif@gmail.com ,\n             end_datetime :  2017-05-07 23:59:00 ,\n             event_name :  Hammersonic ,\n             first_name :  Yudha ,\n             id : 1,\n             last_name :  Budiman ,\n             owner : 1,\n             phone :  0818834315 ,\n             start_datetime :  2017-05-07 19:00:00 ,\n             ticket_quota : 100,\n             updated_at :  2017-02-23 14:38:25 ,\n             venue :  Jakarta \n        }\n    ],\n     from : 1,\n     last_page : 1,\n     next_page_url : null,\n     per_page : 25,\n     prev_page_url : null,\n     to : 1,\n     total : 1\n}", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/event/#resource-url_1", 
+            "text": "POST /event/create", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/event/#description_1", 
+            "text": "Create an event", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/event/#parameters_1", 
+            "text": "name \n     Name of the contact person   \n     email \n     Contact person's e-mail   \n     phone \n     10-12 characters   \n     event_name \n     Name of the event   \n     company_name \n     Name of the company   \n     ticket_quota \n     Allowed value 1-2000   \n     start_date \n     Format yyyy-mm-dd   \n     start_time \n     Format hh:mm   \n     end_date \n     Format yyyy-mm-dd   \n     end_time \n     Format hh:mm   \n     venue \n     Name of the venue", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/event/#example-response_1", 
+            "text": "{\n     status :  success ,\n     message :  Event Anda berhasil disimpan! \n}", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/event/#resource-url_2", 
+            "text": "GET /event/{event_id}", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/event/#description_2", 
+            "text": "Show an event's details", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/event/#example-response_2", 
+            "text": "{\n     company_name :  Revision Live ,\n     created_at :  2017-02-23 14:38:25 ,\n     deleted_at : null,\n     details :  ,\n     email :  yudhaarif@gmail.com ,\n     end_datetime :  2017-05-07 23:59:00 ,\n     event_name :  Hammersonic ,\n     first_name :  Yudha ,\n     id : 1,\n     last_name :  Budiman ,\n     owner : 1,\n     phone :  0818834315 ,\n     start_datetime :  2017-05-07 19:00:00 ,\n     ticket_quota : 100,\n     updated_at :  2017-02-23 14:38:25 ,\n     venue :  Jakarta \n}", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/reservation/", 
+            "text": "Reservation\n\n\n\n\nResource URL\n\n\nGET /reservation\n\n\n\nDescription\n\n\nGet list of reservations\n\n\nExample Response\n\n\n\n\n\n\n\nResource URL\n\n\nGET /reservation/create/{event_id}/register\n\n\n\nDescription\n\n\nPre-checking a reservation whether the selected tickets are available or not\n\n\nParameters\n\n\n\n\n\n    \nticket_class_id\n\n    \nTicket class ids\n\n\n\n\n\n    \nticket\n\n    \nNumber of tickets for each ticket class\n\n\n\n\n\n\nExample Response\n\n\n{\n    \nevent\n: {\n        \ncompany_name\n: \nRevision Live\n,\n        \ncreated_at\n: \n2017-02-23 14:38:25\n,\n        \ndeleted_at\n: null,\n        \ndetails\n: \n,\n        \nemail\n: \nyudhaarif@gmail.com\n,\n        \nend_datetime\n: \n2017-05-07 23:59:00\n,\n        \nevent_name\n: \nHammersonic\n,\n        \nfirst_name\n: \nYudha\n,\n        \nid\n: 1,\n        \nlast_name\n: \nBudiman\n,\n        \nowner\n: 1,\n        \nphone\n: \n0818834315\n,\n        \nstart_datetime\n: \n2017-05-07 19:00:00\n,\n        \nticket_quota\n: 100,\n        \nupdated_at\n: \n2017-02-23 14:38:25\n,\n        \nvenue\n: \nJakarta\n\n    },\n    \nevent_date\n: \n7 May 2017 19:00\n,\n    \nevent_id\n: \n1\n,\n    \nreservation_code\n: \n58af00dc57b1c1.43859931\n,\n    \nticket_class_ids\n: [\n        \n1\n\n    ],\n    \ntickets\n: [\n        \n1\n\n    ],\n    \ntotal_price\n: 365000,\n    \nwith_seat_number\n: false\n}\n\n\n\n\n\n\nResource URL\n\n\nPOST /reservation/create/{event_id}/verify\n\n\n\nDescription\n\n\nStore a reservation\n\n\nParameters\n\n\n\n\n\n    \nname\n\n    \nVisitor's name\n\n\n\n\n\n    \nid_no\n\n    \nKTP/SIM/Passport\n\n\n\n\n\n    \nemail\n\n    \nVisitor's email\n\n\n\n\n\n    \nphone\n\n    \nVisitor's phone (10-12 characters)\n\n\n\n\n\n    \nbirthdate\n\n    \nFormat: yyyy-mm-dd\n\n\n\n\n\n    \nsex\n\n    \nM/F\n\n\n\n\n\n    \ninfo\n\n    \nWhere the visitor got the information from\n\n\n\n\n\n    \nticket_class_id\n\n    \nTicket class ids\n\n\n\n\n\n    \nticket\n\n    \nNumber of tickets for each ticket class\n\n\n\n\n\n\nExample Response\n\n\n{\n    \nstatus\n: \nsuccess\n,\n    \nmessage\n: \nPemesanan dapat dilakukan\n\n}\n\n\n\n\n\n\nPOST /reservation/create_token\n\n\n\nDescription\n\n\nPost the reservation data to Veritrans Snap API\n\n\nParameters\n\n\n\n\n\n    \nreservation_code\n\n    \nAuto-generated\n\n\n\n\n\n    \ntotal_price\n\n    \nGross amount that should be paid\n\n\n\n\n\n    \nname\n\n    \nVisitor's name\n\n\n\n\n\n    \nemail\n\n    \nVisitor's email\n\n\n\n\n\n    \nphone\n\n    \nVisitor's phone (10-12 characters)\n\n\n\n\n\n    \nticket_class_id\n\n    \nTicket class ids\n\n\n\n\n\n    \nticket\n\n    \nNumber of tickets for each ticket class\n\n\n\n\n\n\nExample Response\n\n\nSnap token", 
+            "title": "Reservation"
+        }, 
+        {
+            "location": "/reservation/#reservation", 
+            "text": "", 
+            "title": "Reservation"
+        }, 
+        {
+            "location": "/reservation/#resource-url", 
+            "text": "GET /reservation", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/reservation/#description", 
+            "text": "Get list of reservations", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/reservation/#example-response", 
+            "text": "", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/reservation/#resource-url_1", 
+            "text": "GET /reservation/create/{event_id}/register", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/reservation/#description_1", 
+            "text": "Pre-checking a reservation whether the selected tickets are available or not", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/reservation/#parameters", 
+            "text": "ticket_class_id \n     Ticket class ids   \n     ticket \n     Number of tickets for each ticket class", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/reservation/#example-response_1", 
+            "text": "{\n     event : {\n         company_name :  Revision Live ,\n         created_at :  2017-02-23 14:38:25 ,\n         deleted_at : null,\n         details :  ,\n         email :  yudhaarif@gmail.com ,\n         end_datetime :  2017-05-07 23:59:00 ,\n         event_name :  Hammersonic ,\n         first_name :  Yudha ,\n         id : 1,\n         last_name :  Budiman ,\n         owner : 1,\n         phone :  0818834315 ,\n         start_datetime :  2017-05-07 19:00:00 ,\n         ticket_quota : 100,\n         updated_at :  2017-02-23 14:38:25 ,\n         venue :  Jakarta \n    },\n     event_date :  7 May 2017 19:00 ,\n     event_id :  1 ,\n     reservation_code :  58af00dc57b1c1.43859931 ,\n     ticket_class_ids : [\n         1 \n    ],\n     tickets : [\n         1 \n    ],\n     total_price : 365000,\n     with_seat_number : false\n}", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/reservation/#resource-url_2", 
+            "text": "POST /reservation/create/{event_id}/verify", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/reservation/#description_2", 
+            "text": "Store a reservation", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/reservation/#parameters_1", 
+            "text": "name \n     Visitor's name   \n     id_no \n     KTP/SIM/Passport   \n     email \n     Visitor's email   \n     phone \n     Visitor's phone (10-12 characters)   \n     birthdate \n     Format: yyyy-mm-dd   \n     sex \n     M/F   \n     info \n     Where the visitor got the information from   \n     ticket_class_id \n     Ticket class ids   \n     ticket \n     Number of tickets for each ticket class", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/reservation/#example-response_2", 
+            "text": "{\n     status :  success ,\n     message :  Pemesanan dapat dilakukan \n}   POST /reservation/create_token", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/reservation/#description_3", 
+            "text": "Post the reservation data to Veritrans Snap API", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/reservation/#parameters_2", 
+            "text": "reservation_code \n     Auto-generated   \n     total_price \n     Gross amount that should be paid   \n     name \n     Visitor's name   \n     email \n     Visitor's email   \n     phone \n     Visitor's phone (10-12 characters)   \n     ticket_class_id \n     Ticket class ids   \n     ticket \n     Number of tickets for each ticket class", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/reservation/#example-response_3", 
+            "text": "Snap token", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/ticket/", 
+            "text": "Ticket\n\n\n\n\nResource URL\n\n\nGET /event/{event_id}/ticket\n\n\n\nDescription\n\n\nGet list of ticket classes for an event\n\n\nExample Response\n\n\n[\n    {\n        \nactive\n: 1,\n        \ncreated_at\n: \n2017-02-23 14:38:25\n,\n        \ndeleted_at\n: null,\n        \nend_of_sales\n: \n2017-05-06 23:59:00\n,\n        \nevent_id\n: 1,\n        \nid\n: 1,\n        \nname\n: \nEarly Bird\n,\n        \nprice\n: 365000,\n        \nqty\n: 50,\n        \nupdated_at\n: \n2017-02-23 14:38:25\n\n    },\n    {\n        \nactive\n: 1,\n        \ncreated_at\n: \n2017-02-23 14:38:25\n,\n        \ndeleted_at\n: null,\n        \nend_of_sales\n: \n2017-05-06 23:59:00\n,\n        \nevent_id\n: 1,\n        \nid\n: 2,\n        \nname\n: \nPresale\n,\n        \nprice\n: 405000,\n        \nqty\n: 50,\n        \nupdated_at\n: \n2017-02-23 14:38:25\n\n    }\n]\n\n\n\n\n\n\nResource URL\n\n\nPOST /event/ticket/create\n\n\n\nDescription\n\n\nCreate a ticket class for an event\n\n\nParameters\n\n\n\n\n\n    \nname\n\n    \nName of the ticket class\n\n\n\n\n\n    \nprice\n\n    \nPrice of the ticket\n\n\n\n\n\n    \nqty\n\n    \nTicket's quota\n\n\n\n\n\n    \nend_of_sales\n\n    \nFormat: yyyy-mm-dd\n\n\n\n\n\n    \nevent_id\n\n    \nEvent ID\n\n\n\n\n\n\nExample Response\n\n\n{\n    \nstatus\n: \nsuccess\n,\n    \nmessage\n: \nTiket baru berhasil ditambahkan!\n\n}", 
+            "title": "Ticket"
+        }, 
+        {
+            "location": "/ticket/#ticket", 
+            "text": "", 
+            "title": "Ticket"
+        }, 
+        {
+            "location": "/ticket/#resource-url", 
+            "text": "GET /event/{event_id}/ticket", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/ticket/#description", 
+            "text": "Get list of ticket classes for an event", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/ticket/#example-response", 
+            "text": "[\n    {\n         active : 1,\n         created_at :  2017-02-23 14:38:25 ,\n         deleted_at : null,\n         end_of_sales :  2017-05-06 23:59:00 ,\n         event_id : 1,\n         id : 1,\n         name :  Early Bird ,\n         price : 365000,\n         qty : 50,\n         updated_at :  2017-02-23 14:38:25 \n    },\n    {\n         active : 1,\n         created_at :  2017-02-23 14:38:25 ,\n         deleted_at : null,\n         end_of_sales :  2017-05-06 23:59:00 ,\n         event_id : 1,\n         id : 2,\n         name :  Presale ,\n         price : 405000,\n         qty : 50,\n         updated_at :  2017-02-23 14:38:25 \n    }\n]", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/ticket/#resource-url_1", 
+            "text": "POST /event/ticket/create", 
+            "title": "Resource URL"
+        }, 
+        {
+            "location": "/ticket/#description_1", 
+            "text": "Create a ticket class for an event", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/ticket/#parameters", 
+            "text": "name \n     Name of the ticket class   \n     price \n     Price of the ticket   \n     qty \n     Ticket's quota   \n     end_of_sales \n     Format: yyyy-mm-dd   \n     event_id \n     Event ID", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/ticket/#example-response_1", 
+            "text": "{\n     status :  success ,\n     message :  Tiket baru berhasil ditambahkan! \n}", 
+            "title": "Example Response"
+        }
+    ]
+}
